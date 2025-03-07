@@ -1,4 +1,4 @@
-import { Match, Player } from './types';
+import { Match } from './types';
 import { useMatches } from './useMatches';
 import { useState } from 'react';
 import ErrorIcon from './icons/error-vector.svg'
@@ -8,9 +8,7 @@ import { MatchDetails } from './MatchDetails';
 const MatchTracker = () => {
     const { 
       data, 
-      isLoading, 
       isError, 
-      error,
       refetch, 
       isFetching 
     } = useMatches();
